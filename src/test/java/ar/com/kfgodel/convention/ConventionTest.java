@@ -31,12 +31,12 @@ public class ConventionTest extends JavaSpec<ConventionTestContext> {
       });
       
       it("knows where on the classpath are the static web content located",()->{
-          assertThat(context().convention().getWebFolderInClasspath()).isEqualTo("/web");
+          assertThat(context().convention().getWebFolderInClasspath()).isEqualTo("/convention/web");
       });
       
       it("knwows where the web content is during development",()->{
         assertThat(context().convention().getWebFoldersInSources())
-          .isEqualTo(Lists.newArrayList("src/main/html/web","src/main/javascript/web"));
+          .isEqualTo(Lists.newArrayList("src/main/resources/convention/web"));
       });
 
       it("knows where the rest api root url is",()->{

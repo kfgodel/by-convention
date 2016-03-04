@@ -28,12 +28,12 @@ public class DefaultConvention implements Convention {
 
   @Override
   public String getWebFolderInClasspath() {
-    return "/web";
+    return "/convention/web";
   }
 
   @Override
   public List<String> getWebFoldersInSources() {
-    return Lists.newArrayList("src/main/html/web","src/main/javascript/web");
+    return Lists.newArrayList("src/main/resources/convention/web");
   }
 
   @Override
