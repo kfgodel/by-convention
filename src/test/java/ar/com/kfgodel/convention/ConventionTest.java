@@ -44,9 +44,8 @@ public class ConventionTest extends JavaSpec<ConventionTestContext> {
       });
 
       it("knows where the rest api resource types are",()->{
-          assertThat(context().convention().getRestApiRootPackageName()).isEqualTo("web.api.resources");
+        assertThat(context().convention().getRestApiRootPackageName()).isEqualTo("convention.rest.api");
       });
-
 
     });
   }

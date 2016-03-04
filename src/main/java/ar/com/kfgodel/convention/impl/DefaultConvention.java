@@ -43,7 +43,7 @@ public class DefaultConvention implements Convention {
 
   @Override
   public String getRestApiRootPackageName() {
-    return "web.api.resources";
+    return "convention.rest.api";
   }
 
 }
