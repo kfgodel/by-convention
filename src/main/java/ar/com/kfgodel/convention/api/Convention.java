@@ -45,11 +45,11 @@ public interface Convention {
    * @return The root url that serves api resources in a web application.<br> This url hosts
    * all the application rest api
    */
-  String getRestApiRootUrl();
+  List<String> getRestApiRootUrl();
 
   /**
    * @return The name of the root package that contains types annotated as rest resources
    */
-  String getRestApiRootPackageName();
+  List<String> getRestApiRootPackageName();
 
 }

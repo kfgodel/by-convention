@@ -37,13 +37,13 @@ public class DefaultConvention implements Convention {
   }
 
   @Override
-  public String getRestApiRootUrl() {
-    return "/api";
+  public List<String> getRestApiRootUrl() {
+    return Lists.newArrayList("/api");
   }
 
   @Override
-  public String getRestApiRootPackageName() {
-    return "convention.rest.api";
+  public List<String> getRestApiRootPackageName() {
+    return Lists.newArrayList("convention.rest.api");
   }
 
 }
