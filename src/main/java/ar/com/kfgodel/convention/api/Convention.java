@@ -52,4 +52,8 @@ public interface Convention {
    */
   List<String> getRestApiRootPackageName();
 
+  /**
+   * @return The name of the root packages were converter classes are to be found
+   */
+  List<String> getConverterPackageNames();
 }

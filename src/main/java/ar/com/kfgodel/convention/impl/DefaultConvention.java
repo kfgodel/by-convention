@@ -46,4 +46,9 @@ public class DefaultConvention implements Convention {
     return Lists.newArrayList("convention.rest.api");
   }
 
+  @Override
+  public List<String> getConverterPackageNames() {
+    return Lists.newArrayList("convention.transformers");
+  }
+
 }
