@@ -6,10 +6,9 @@
 
   <parent>
     <groupId>ar.com.kfgodel</groupId>
-    <artifactId>root-pom</artifactId>
+    <artifactId>java-pom</artifactId>
     <version>0.1-SNAPSHOT</version>
   </parent>
-
 
   <artifactId>by-convention</artifactId>
   <version>0.1-SNAPSHOT</version>
@@ -32,5 +31,15 @@
       <url>http://kfgodel.info:8081/nexus/content/groups/public/</url>
     </repository>
   </repositories>
+
+  <dependencies>
+
+    <!-- Spec for testing -->
+    <dependency>
+      <groupId>ar.com.dgarcia</groupId>
+      <artifactId>java-spec</artifactId>
+    </dependency>
+
+  </dependencies>
 
 </project>
