@@ -39,10 +39,6 @@ public class ConventionTest extends JavaSpec<ConventionTestContext> {
           .isEqualTo(Lists.newArrayList("src/main/resources/convention/web"));
       });
 
-      it("knows where the rest api root url is",()->{
-          assertThat(context().convention().getRestApiRootUrl()).isEqualTo(Lists.newArrayList("/api"));
-      });
-
       it("knows where the rest api resource types are",()->{
         assertThat(context().convention().getRestApiRootPackageName()).isEqualTo(Lists.newArrayList("convention.rest.api"));
       });

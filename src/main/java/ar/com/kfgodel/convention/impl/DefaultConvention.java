@@ -37,11 +37,6 @@ public class DefaultConvention implements Convention {
   }
 
   @Override
-  public List<String> getRestApiRootUrl() {
-    return Lists.newArrayList("/api");
-  }
-
-  @Override
   public List<String> getRestApiRootPackageName() {
     return Lists.newArrayList("convention.rest.api");
   }
@@ -49,12 +44,6 @@ public class DefaultConvention implements Convention {
   @Override
   public List<String> getConverterPackageNames() {
     return Lists.newArrayList("convention.transformers");
-  }
-
-  @Override
-  public List<String> getSecuredRooturls() {
-    // By convention only the api resources (and all of them) are secured
-    return getRestApiRootUrl();
   }
 
 }

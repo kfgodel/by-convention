@@ -42,12 +42,6 @@ public interface Convention {
   List<String> getWebFoldersInSources();
 
   /**
-   * @return The root url that serves api resources in a web application.<br> This url hosts
-   * all the application rest api
-   */
-  List<String> getRestApiRootUrl();
-
-  /**
    * @return The name of the root package that contains types annotated as rest resources
    */
   List<String> getRestApiRootPackageName();
@@ -57,8 +51,4 @@ public interface Convention {
    */
   List<String> getConverterPackageNames();
 
-  /**
-   * @return The url roots that need to be secured to prevent unauthenticated user access
-   */
-  List<String> getSecuredRooturls();
 }
