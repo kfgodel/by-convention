@@ -51,4 +51,10 @@ public class DefaultConvention implements Convention {
     return Lists.newArrayList("convention.transformers");
   }
 
+  @Override
+  public List<String> getSecuredRooturls() {
+    // By convention only the api resources (and all of them) are secured
+    return getRestApiRootUrl();
+  }
+
 }

@@ -56,4 +56,9 @@ public interface Convention {
    * @return The name of the root packages were converter classes are to be found
    */
   List<String> getConverterPackageNames();
+
+  /**
+   * @return The url roots that need to be secured to prevent unauthenticated user access
+   */
+  List<String> getSecuredRooturls();
 }
