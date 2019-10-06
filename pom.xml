@@ -17,12 +17,19 @@
   <name>By-Convention</name>
   <description>Shared dependency for projects by-convention. It defines knowledge of what is where
     under the convention. </description>
+  <url>https://github.com/kfgodel/by-convention</url>
 
   <scm>
-    <connection>scm:git:ssh://github.com/kfgodel/by-convention.git</connection>
     <developerConnection>scm:git:ssh://github.com/kfgodel/by-convention.git</developerConnection>
-    <url>https://github.com/kfgodel/by-convention</url>
+    <connection>${project.scm.developerConnection}</connection>
+    <url>${project.url}</url>
   </scm>
+
+  <properties>
+    <!-- Sonar properties to prevent unintentional id changes (Reference: https://docs.sonarqube.org/latest/analysis/analysis-parameters/) -->
+    <sonar.projectKey>ar.com.kfgodel:by-convention:master</sonar.projectKey>
+
+  </properties>
 
   <repositories>
     <repository>
